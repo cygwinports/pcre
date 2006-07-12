@@ -1,7 +1,7 @@
 category: Devel
 requires: cygwin
 external-source: pcre
-sdesc: "Perl-Compatible Regular Expressions (development files)"
+sdesc: "Perl-Compatible Regular Expressions (development)"
 ldesc: "The PCRE library is a set of functions that implement regular
 expression pattern matching using the same syntax and semantics as Perl,
 with just a few differences.  The current implementation of PCRE

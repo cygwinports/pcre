@@ -7,42 +7,42 @@ corresponds approximately with Perl 5.8, including support for UTF-8
 encoded strings and Unicode general category properties.
 
 Runtime requirements:
-  cygwin-1.5.19-4
+  cygwin-1.5.20-1
 
 Build requirements:
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
   binutils-20050610-1
+  cygport-0.2.2-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   gcc-g++-3.4.4-1
-  libtool1.5-1.5.20-2
+  libtool1.5-1.5.22-1
   make-3.80-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical website:
   http://www.pcre.org/
 
 Canonical download:
   ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
-  http://prdownloads.sourceforge.net/pcre/
 
 -------------------------------------------
 
 Build instructions:
-  unpack pcre-6.6-1-src.tar.bz2
+  unpack pcre-6.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./pcre-6.6-1.sh all
+  cygport ./pcre-6.7-X.cygport all
 
 This will create:
-  /usr/src/libpcre0-6.6-1.tar.bz2
-  /usr/src/pcre-6.6-1-src.tar.bz2
-  /usr/src/pcre-6.6-1.tar.bz2
-  /usr/src/pcre-devel-6.6-1.tar.bz2
-  /usr/src/pcre-doc-6.6-1.tar.bz2
+  /usr/src/libpcre0-6.7-X.tar.bz2
+  /usr/src/pcre-6.7-X-src.tar.bz2
+  /usr/src/pcre-6.7-X.tar.bz2
+  /usr/src/pcre-devel-6.7-X.tar.bz2
+  /usr/src/pcre-doc-6.7-X.tar.bz2
 
 -------------------------------------------
 
@@ -50,14 +50,14 @@ Files included in the main package:
 
   /usr/bin/pcregrep.exe
   /usr/bin/pcretest.exe
-  /usr/share/doc/Cygwin/pcre-6.6.README
-  /usr/share/doc/pcre-6.6/AUTHORS
-  /usr/share/doc/pcre-6.6/ChangeLog
-  /usr/share/doc/pcre-6.6/COPYING
-  /usr/share/doc/pcre-6.6/INSTALL
-  /usr/share/doc/pcre-6.6/LICENCE
-  /usr/share/doc/pcre-6.6/NEWS
-  /usr/share/doc/pcre-6.6/README
+  /usr/share/doc/Cygwin/pcre-6.7.README
+  /usr/share/doc/pcre-6.7/AUTHORS
+  /usr/share/doc/pcre-6.7/ChangeLog
+  /usr/share/doc/pcre-6.7/COPYING
+  /usr/share/doc/pcre-6.7/INSTALL
+  /usr/share/doc/pcre-6.7/LICENCE
+  /usr/share/doc/pcre-6.7/NEWS
+  /usr/share/doc/pcre-6.7/README
   /usr/share/man/man1/pcregrep.1.gz
   /usr/share/man/man1/pcretest.1.gz
 
@@ -88,41 +88,41 @@ Files included in the devel package:
 
 Files included in the doc package:
 
-  /usr/share/doc/pcre-6.6/html/index.html
-  /usr/share/doc/pcre-6.6/html/pcre.html
-  /usr/share/doc/pcre-6.6/html/pcreapi.html
-  /usr/share/doc/pcre-6.6/html/pcrebuild.html
-  /usr/share/doc/pcre-6.6/html/pcrecallout.html
-  /usr/share/doc/pcre-6.6/html/pcrecompat.html
-  /usr/share/doc/pcre-6.6/html/pcrecpp.html
-  /usr/share/doc/pcre-6.6/html/pcregrep.html
-  /usr/share/doc/pcre-6.6/html/pcrematching.html
-  /usr/share/doc/pcre-6.6/html/pcrepartial.html
-  /usr/share/doc/pcre-6.6/html/pcrepattern.html
-  /usr/share/doc/pcre-6.6/html/pcreperform.html
-  /usr/share/doc/pcre-6.6/html/pcreposix.html
-  /usr/share/doc/pcre-6.6/html/pcreprecompile.html
-  /usr/share/doc/pcre-6.6/html/pcresample.html
-  /usr/share/doc/pcre-6.6/html/pcretest.html
-  /usr/share/doc/pcre-6.6/html/pcre_compile.html
-  /usr/share/doc/pcre-6.6/html/pcre_compile2.html
-  /usr/share/doc/pcre-6.6/html/pcre_config.html
-  /usr/share/doc/pcre-6.6/html/pcre_copy_named_substring.html
-  /usr/share/doc/pcre-6.6/html/pcre_copy_substring.html
-  /usr/share/doc/pcre-6.6/html/pcre_dfa_exec.html
-  /usr/share/doc/pcre-6.6/html/pcre_exec.html
-  /usr/share/doc/pcre-6.6/html/pcre_free_substring.html
-  /usr/share/doc/pcre-6.6/html/pcre_free_substring_list.html
-  /usr/share/doc/pcre-6.6/html/pcre_fullinfo.html
-  /usr/share/doc/pcre-6.6/html/pcre_get_named_substring.html
-  /usr/share/doc/pcre-6.6/html/pcre_get_stringnumber.html
-  /usr/share/doc/pcre-6.6/html/pcre_get_substring.html
-  /usr/share/doc/pcre-6.6/html/pcre_get_substring_list.html
-  /usr/share/doc/pcre-6.6/html/pcre_info.html
-  /usr/share/doc/pcre-6.6/html/pcre_maketables.html
-  /usr/share/doc/pcre-6.6/html/pcre_refcount.html
-  /usr/share/doc/pcre-6.6/html/pcre_study.html
-  /usr/share/doc/pcre-6.6/html/pcre_version.html
+  /usr/share/doc/pcre-6.7/html/index.html
+  /usr/share/doc/pcre-6.7/html/pcre.html
+  /usr/share/doc/pcre-6.7/html/pcreapi.html
+  /usr/share/doc/pcre-6.7/html/pcrebuild.html
+  /usr/share/doc/pcre-6.7/html/pcrecallout.html
+  /usr/share/doc/pcre-6.7/html/pcrecompat.html
+  /usr/share/doc/pcre-6.7/html/pcrecpp.html
+  /usr/share/doc/pcre-6.7/html/pcregrep.html
+  /usr/share/doc/pcre-6.7/html/pcrematching.html
+  /usr/share/doc/pcre-6.7/html/pcrepartial.html
+  /usr/share/doc/pcre-6.7/html/pcrepattern.html
+  /usr/share/doc/pcre-6.7/html/pcreperform.html
+  /usr/share/doc/pcre-6.7/html/pcreposix.html
+  /usr/share/doc/pcre-6.7/html/pcreprecompile.html
+  /usr/share/doc/pcre-6.7/html/pcresample.html
+  /usr/share/doc/pcre-6.7/html/pcretest.html
+  /usr/share/doc/pcre-6.7/html/pcre_compile.html
+  /usr/share/doc/pcre-6.7/html/pcre_compile2.html
+  /usr/share/doc/pcre-6.7/html/pcre_config.html
+  /usr/share/doc/pcre-6.7/html/pcre_copy_named_substring.html
+  /usr/share/doc/pcre-6.7/html/pcre_copy_substring.html
+  /usr/share/doc/pcre-6.7/html/pcre_dfa_exec.html
+  /usr/share/doc/pcre-6.7/html/pcre_exec.html
+  /usr/share/doc/pcre-6.7/html/pcre_free_substring.html
+  /usr/share/doc/pcre-6.7/html/pcre_free_substring_list.html
+  /usr/share/doc/pcre-6.7/html/pcre_fullinfo.html
+  /usr/share/doc/pcre-6.7/html/pcre_get_named_substring.html
+  /usr/share/doc/pcre-6.7/html/pcre_get_stringnumber.html
+  /usr/share/doc/pcre-6.7/html/pcre_get_substring.html
+  /usr/share/doc/pcre-6.7/html/pcre_get_substring_list.html
+  /usr/share/doc/pcre-6.7/html/pcre_info.html
+  /usr/share/doc/pcre-6.7/html/pcre_maketables.html
+  /usr/share/doc/pcre-6.7/html/pcre_refcount.html
+  /usr/share/doc/pcre-6.7/html/pcre_study.html
+  /usr/share/doc/pcre-6.7/html/pcre_version.html
   /usr/share/man/man3/pcre.3.gz
   /usr/share/man/man3/pcreapi.3.gz
   /usr/share/man/man3/pcrebuild.3.gz
@@ -156,6 +156,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 6.7-1 -----
+Version bump.
 
 ----- version 6.6-1 -----
 Version bump.
