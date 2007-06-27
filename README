@@ -31,18 +31,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pcre-7.1-X-src.tar.bz2
+  unpack pcre-7.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pcre-7.1-X.cygport all
+  cygport ./pcre-7.2-X.cygport all
 
 This will create:
-  /usr/src/libpcre0-7.1-X.tar.bz2
-  /usr/src/pcre-7.1-X-src.tar.bz2
-  /usr/src/pcre-7.1-X.tar.bz2
-  /usr/src/pcre-devel-7.1-X.tar.bz2
-  /usr/src/pcre-doc-7.1-X.tar.bz2
+  /usr/src/libpcre0-7.2-X.tar.bz2
+  /usr/src/pcre-7.2-X-src.tar.bz2
+  /usr/src/pcre-7.2-X.tar.bz2
+  /usr/src/pcre-devel-7.2-X.tar.bz2
+  /usr/src/pcre-doc-7.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,18 +51,18 @@ Files included in the binary packages:
 (pcre)
   /usr/bin/pcregrep.exe
   /usr/bin/pcretest.exe
-  /usr/share/doc/Cygwin/pcre-7.1.README
-  /usr/share/doc/pcre-7.1/AUTHORS
-  /usr/share/doc/pcre-7.1/ChangeLog
-  /usr/share/doc/pcre-7.1/COPYING
-  /usr/share/doc/pcre-7.1/INSTALL
-  /usr/share/doc/pcre-7.1/LICENCE
-  /usr/share/doc/pcre-7.1/NEWS
-  /usr/share/doc/pcre-7.1/README
-  /usr/share/doc/pcre-7.1/pcre-config.txt
-  /usr/share/doc/pcre-7.1/pcre.txt
-  /usr/share/doc/pcre-7.1/pcregrep.txt
-  /usr/share/doc/pcre-7.1/pcretest.txt
+  /usr/share/doc/Cygwin/pcre-7.2.README
+  /usr/share/doc/pcre-7.2/AUTHORS
+  /usr/share/doc/pcre-7.2/ChangeLog
+  /usr/share/doc/pcre-7.2/COPYING
+  /usr/share/doc/pcre-7.2/INSTALL
+  /usr/share/doc/pcre-7.2/LICENCE
+  /usr/share/doc/pcre-7.2/NEWS
+  /usr/share/doc/pcre-7.2/README
+  /usr/share/doc/pcre-7.2/pcre-config.txt
+  /usr/share/doc/pcre-7.2/pcre.txt
+  /usr/share/doc/pcre-7.2/pcregrep.txt
+  /usr/share/doc/pcre-7.2/pcretest.txt
   /usr/share/man/man1/pcregrep.1.gz
   /usr/share/man/man1/pcretest.1.gz
 
@@ -93,44 +93,44 @@ Files included in the binary packages:
   /usr/share/man/man1/pcre-config.1.gz
 
 (pcre-doc)
-  /usr/share/doc/pcre-7.1/html/index.html
-  /usr/share/doc/pcre-7.1/html/pcre-config.html
-  /usr/share/doc/pcre-7.1/html/pcre.html
-  /usr/share/doc/pcre-7.1/html/pcre_compile.html
-  /usr/share/doc/pcre-7.1/html/pcre_compile2.html
-  /usr/share/doc/pcre-7.1/html/pcre_config.html
-  /usr/share/doc/pcre-7.1/html/pcre_copy_named_substring.html
-  /usr/share/doc/pcre-7.1/html/pcre_copy_substring.html
-  /usr/share/doc/pcre-7.1/html/pcre_dfa_exec.html
-  /usr/share/doc/pcre-7.1/html/pcre_exec.html
-  /usr/share/doc/pcre-7.1/html/pcre_free_substring.html
-  /usr/share/doc/pcre-7.1/html/pcre_free_substring_list.html
-  /usr/share/doc/pcre-7.1/html/pcre_fullinfo.html
-  /usr/share/doc/pcre-7.1/html/pcre_get_named_substring.html
-  /usr/share/doc/pcre-7.1/html/pcre_get_stringnumber.html
-  /usr/share/doc/pcre-7.1/html/pcre_get_stringtable_entries.html
-  /usr/share/doc/pcre-7.1/html/pcre_get_substring.html
-  /usr/share/doc/pcre-7.1/html/pcre_get_substring_list.html
-  /usr/share/doc/pcre-7.1/html/pcre_info.html
-  /usr/share/doc/pcre-7.1/html/pcre_maketables.html
-  /usr/share/doc/pcre-7.1/html/pcre_refcount.html
-  /usr/share/doc/pcre-7.1/html/pcre_study.html
-  /usr/share/doc/pcre-7.1/html/pcre_version.html
-  /usr/share/doc/pcre-7.1/html/pcreapi.html
-  /usr/share/doc/pcre-7.1/html/pcrebuild.html
-  /usr/share/doc/pcre-7.1/html/pcrecallout.html
-  /usr/share/doc/pcre-7.1/html/pcrecompat.html
-  /usr/share/doc/pcre-7.1/html/pcrecpp.html
-  /usr/share/doc/pcre-7.1/html/pcregrep.html
-  /usr/share/doc/pcre-7.1/html/pcrematching.html
-  /usr/share/doc/pcre-7.1/html/pcrepartial.html
-  /usr/share/doc/pcre-7.1/html/pcrepattern.html
-  /usr/share/doc/pcre-7.1/html/pcreperform.html
-  /usr/share/doc/pcre-7.1/html/pcreposix.html
-  /usr/share/doc/pcre-7.1/html/pcreprecompile.html
-  /usr/share/doc/pcre-7.1/html/pcresample.html
-  /usr/share/doc/pcre-7.1/html/pcrestack.html
-  /usr/share/doc/pcre-7.1/html/pcretest.html
+  /usr/share/doc/pcre-7.2/html/index.html
+  /usr/share/doc/pcre-7.2/html/pcre-config.html
+  /usr/share/doc/pcre-7.2/html/pcre.html
+  /usr/share/doc/pcre-7.2/html/pcre_compile.html
+  /usr/share/doc/pcre-7.2/html/pcre_compile2.html
+  /usr/share/doc/pcre-7.2/html/pcre_config.html
+  /usr/share/doc/pcre-7.2/html/pcre_copy_named_substring.html
+  /usr/share/doc/pcre-7.2/html/pcre_copy_substring.html
+  /usr/share/doc/pcre-7.2/html/pcre_dfa_exec.html
+  /usr/share/doc/pcre-7.2/html/pcre_exec.html
+  /usr/share/doc/pcre-7.2/html/pcre_free_substring.html
+  /usr/share/doc/pcre-7.2/html/pcre_free_substring_list.html
+  /usr/share/doc/pcre-7.2/html/pcre_fullinfo.html
+  /usr/share/doc/pcre-7.2/html/pcre_get_named_substring.html
+  /usr/share/doc/pcre-7.2/html/pcre_get_stringnumber.html
+  /usr/share/doc/pcre-7.2/html/pcre_get_stringtable_entries.html
+  /usr/share/doc/pcre-7.2/html/pcre_get_substring.html
+  /usr/share/doc/pcre-7.2/html/pcre_get_substring_list.html
+  /usr/share/doc/pcre-7.2/html/pcre_info.html
+  /usr/share/doc/pcre-7.2/html/pcre_maketables.html
+  /usr/share/doc/pcre-7.2/html/pcre_refcount.html
+  /usr/share/doc/pcre-7.2/html/pcre_study.html
+  /usr/share/doc/pcre-7.2/html/pcre_version.html
+  /usr/share/doc/pcre-7.2/html/pcreapi.html
+  /usr/share/doc/pcre-7.2/html/pcrebuild.html
+  /usr/share/doc/pcre-7.2/html/pcrecallout.html
+  /usr/share/doc/pcre-7.2/html/pcrecompat.html
+  /usr/share/doc/pcre-7.2/html/pcrecpp.html
+  /usr/share/doc/pcre-7.2/html/pcregrep.html
+  /usr/share/doc/pcre-7.2/html/pcrematching.html
+  /usr/share/doc/pcre-7.2/html/pcrepartial.html
+  /usr/share/doc/pcre-7.2/html/pcrepattern.html
+  /usr/share/doc/pcre-7.2/html/pcreperform.html
+  /usr/share/doc/pcre-7.2/html/pcreposix.html
+  /usr/share/doc/pcre-7.2/html/pcreprecompile.html
+  /usr/share/doc/pcre-7.2/html/pcresample.html
+  /usr/share/doc/pcre-7.2/html/pcrestack.html
+  /usr/share/doc/pcre-7.2/html/pcretest.html
   /usr/share/man/man3/pcre.3.gz
   /usr/share/man/man3/pcre_compile.3.gz
   /usr/share/man/man3/pcre_compile2.3.gz
@@ -169,6 +169,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 7.2-1 -----
+Version bump.
 
 ----- version 7.1-1 -----
 Version bump.
