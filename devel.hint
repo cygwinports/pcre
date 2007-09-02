@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin
+requires: cygwin libpcre0
 external-source: pcre
 sdesc: "Perl-Compatible Regular Expressions (development)"
 ldesc: "The PCRE library is a set of functions that implement regular
