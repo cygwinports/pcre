@@ -170,6 +170,9 @@ Files included in the binary packages:
 
 Port Notes:
 
+----- version 7.4-2 -----
+Enabled unicode properties for glib-2.14.
+
 ----- version 7.4-1 -----
 Version bump.
 
