@@ -7,14 +7,18 @@ corresponds approximately with Perl 5.8, including support for UTF-8
 encoded strings and Unicode general category properties.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
+  libbz2_1-1.0.3-2
+  libreadline6-5.2.7-9
+  zlib-1.2.3-2
 
 Build requirements:
-  cygwin-1.5.24-2
+(besides corresponding devel packages)
+  cygwin-1.5.25-7
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -31,18 +35,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pcre-7.4-X-src.tar.bz2
+  unpack pcre-7.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pcre-7.4-X.cygport all
+  cygport ./pcre-7.5-X.cygport all
 
 This will create:
-  /usr/src/libpcre0-7.4-X.tar.bz2
-  /usr/src/pcre-7.4-X-src.tar.bz2
-  /usr/src/pcre-7.4-X.tar.bz2
-  /usr/src/pcre-devel-7.4-X.tar.bz2
-  /usr/src/pcre-doc-7.4-X.tar.bz2
+  /usr/src/libpcre0-7.5-X.tar.bz2
+  /usr/src/pcre-7.5-X-src.tar.bz2
+  /usr/src/pcre-7.5-X.tar.bz2
+  /usr/src/pcre-devel-7.5-X.tar.bz2
+  /usr/src/pcre-doc-7.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,18 +55,18 @@ Files included in the binary packages:
 (pcre)
   /usr/bin/pcregrep.exe
   /usr/bin/pcretest.exe
-  /usr/share/doc/Cygwin/pcre-7.4.README
-  /usr/share/doc/pcre-7.4/AUTHORS
-  /usr/share/doc/pcre-7.4/ChangeLog
-  /usr/share/doc/pcre-7.4/COPYING
-  /usr/share/doc/pcre-7.4/INSTALL
-  /usr/share/doc/pcre-7.4/LICENCE
-  /usr/share/doc/pcre-7.4/NEWS
-  /usr/share/doc/pcre-7.4/README
-  /usr/share/doc/pcre-7.4/pcre-config.txt
-  /usr/share/doc/pcre-7.4/pcre.txt
-  /usr/share/doc/pcre-7.4/pcregrep.txt
-  /usr/share/doc/pcre-7.4/pcretest.txt
+  /usr/share/doc/Cygwin/pcre-7.5.README
+  /usr/share/doc/pcre-7.5/AUTHORS
+  /usr/share/doc/pcre-7.5/ChangeLog
+  /usr/share/doc/pcre-7.5/COPYING
+  /usr/share/doc/pcre-7.5/INSTALL
+  /usr/share/doc/pcre-7.5/LICENCE
+  /usr/share/doc/pcre-7.5/NEWS
+  /usr/share/doc/pcre-7.5/README
+  /usr/share/doc/pcre-7.5/pcre-config.txt
+  /usr/share/doc/pcre-7.5/pcre.txt
+  /usr/share/doc/pcre-7.5/pcregrep.txt
+  /usr/share/doc/pcre-7.5/pcretest.txt
   /usr/share/man/man1/pcregrep.1.gz
   /usr/share/man/man1/pcretest.1.gz
 
@@ -93,44 +97,44 @@ Files included in the binary packages:
   /usr/share/man/man1/pcre-config.1.gz
 
 (pcre-doc)
-  /usr/share/doc/pcre-7.4/html/index.html
-  /usr/share/doc/pcre-7.4/html/pcre-config.html
-  /usr/share/doc/pcre-7.4/html/pcre.html
-  /usr/share/doc/pcre-7.4/html/pcre_compile.html
-  /usr/share/doc/pcre-7.4/html/pcre_compile2.html
-  /usr/share/doc/pcre-7.4/html/pcre_config.html
-  /usr/share/doc/pcre-7.4/html/pcre_copy_named_substring.html
-  /usr/share/doc/pcre-7.4/html/pcre_copy_substring.html
-  /usr/share/doc/pcre-7.4/html/pcre_dfa_exec.html
-  /usr/share/doc/pcre-7.4/html/pcre_exec.html
-  /usr/share/doc/pcre-7.4/html/pcre_free_substring.html
-  /usr/share/doc/pcre-7.4/html/pcre_free_substring_list.html
-  /usr/share/doc/pcre-7.4/html/pcre_fullinfo.html
-  /usr/share/doc/pcre-7.4/html/pcre_get_named_substring.html
-  /usr/share/doc/pcre-7.4/html/pcre_get_stringnumber.html
-  /usr/share/doc/pcre-7.4/html/pcre_get_stringtable_entries.html
-  /usr/share/doc/pcre-7.4/html/pcre_get_substring.html
-  /usr/share/doc/pcre-7.4/html/pcre_get_substring_list.html
-  /usr/share/doc/pcre-7.4/html/pcre_info.html
-  /usr/share/doc/pcre-7.4/html/pcre_maketables.html
-  /usr/share/doc/pcre-7.4/html/pcre_refcount.html
-  /usr/share/doc/pcre-7.4/html/pcre_study.html
-  /usr/share/doc/pcre-7.4/html/pcre_version.html
-  /usr/share/doc/pcre-7.4/html/pcreapi.html
-  /usr/share/doc/pcre-7.4/html/pcrebuild.html
-  /usr/share/doc/pcre-7.4/html/pcrecallout.html
-  /usr/share/doc/pcre-7.4/html/pcrecompat.html
-  /usr/share/doc/pcre-7.4/html/pcrecpp.html
-  /usr/share/doc/pcre-7.4/html/pcregrep.html
-  /usr/share/doc/pcre-7.4/html/pcrematching.html
-  /usr/share/doc/pcre-7.4/html/pcrepartial.html
-  /usr/share/doc/pcre-7.4/html/pcrepattern.html
-  /usr/share/doc/pcre-7.4/html/pcreperform.html
-  /usr/share/doc/pcre-7.4/html/pcreposix.html
-  /usr/share/doc/pcre-7.4/html/pcreprecompile.html
-  /usr/share/doc/pcre-7.4/html/pcresample.html
-  /usr/share/doc/pcre-7.4/html/pcrestack.html
-  /usr/share/doc/pcre-7.4/html/pcretest.html
+  /usr/share/doc/pcre-7.5/html/index.html
+  /usr/share/doc/pcre-7.5/html/pcre-config.html
+  /usr/share/doc/pcre-7.5/html/pcre.html
+  /usr/share/doc/pcre-7.5/html/pcre_compile.html
+  /usr/share/doc/pcre-7.5/html/pcre_compile2.html
+  /usr/share/doc/pcre-7.5/html/pcre_config.html
+  /usr/share/doc/pcre-7.5/html/pcre_copy_named_substring.html
+  /usr/share/doc/pcre-7.5/html/pcre_copy_substring.html
+  /usr/share/doc/pcre-7.5/html/pcre_dfa_exec.html
+  /usr/share/doc/pcre-7.5/html/pcre_exec.html
+  /usr/share/doc/pcre-7.5/html/pcre_free_substring.html
+  /usr/share/doc/pcre-7.5/html/pcre_free_substring_list.html
+  /usr/share/doc/pcre-7.5/html/pcre_fullinfo.html
+  /usr/share/doc/pcre-7.5/html/pcre_get_named_substring.html
+  /usr/share/doc/pcre-7.5/html/pcre_get_stringnumber.html
+  /usr/share/doc/pcre-7.5/html/pcre_get_stringtable_entries.html
+  /usr/share/doc/pcre-7.5/html/pcre_get_substring.html
+  /usr/share/doc/pcre-7.5/html/pcre_get_substring_list.html
+  /usr/share/doc/pcre-7.5/html/pcre_info.html
+  /usr/share/doc/pcre-7.5/html/pcre_maketables.html
+  /usr/share/doc/pcre-7.5/html/pcre_refcount.html
+  /usr/share/doc/pcre-7.5/html/pcre_study.html
+  /usr/share/doc/pcre-7.5/html/pcre_version.html
+  /usr/share/doc/pcre-7.5/html/pcreapi.html
+  /usr/share/doc/pcre-7.5/html/pcrebuild.html
+  /usr/share/doc/pcre-7.5/html/pcrecallout.html
+  /usr/share/doc/pcre-7.5/html/pcrecompat.html
+  /usr/share/doc/pcre-7.5/html/pcrecpp.html
+  /usr/share/doc/pcre-7.5/html/pcregrep.html
+  /usr/share/doc/pcre-7.5/html/pcrematching.html
+  /usr/share/doc/pcre-7.5/html/pcrepartial.html
+  /usr/share/doc/pcre-7.5/html/pcrepattern.html
+  /usr/share/doc/pcre-7.5/html/pcreperform.html
+  /usr/share/doc/pcre-7.5/html/pcreposix.html
+  /usr/share/doc/pcre-7.5/html/pcreprecompile.html
+  /usr/share/doc/pcre-7.5/html/pcresample.html
+  /usr/share/doc/pcre-7.5/html/pcrestack.html
+  /usr/share/doc/pcre-7.5/html/pcretest.html
   /usr/share/man/man3/pcre.3.gz
   /usr/share/man/man3/pcre_compile.3.gz
   /usr/share/man/man3/pcre_compile2.3.gz
@@ -169,6 +173,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 7.5-1 -----
+Version bump.
 
 ----- version 7.4-2 -----
 Enabled unicode properties for glib-2.14.

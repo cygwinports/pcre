@@ -1,5 +1,5 @@
 category: Devel Utils
-requires: cygwin libpcre0
+requires: cygwin libpcre0 libbz2_1 libreadline6 zlib
 sdesc: "Perl-Compatible Regular Expressions (utilities)"
 ldesc: "The PCRE library is a set of functions that implement regular
 expression pattern matching using the same syntax and semantics as Perl,
