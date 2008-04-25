@@ -7,22 +7,21 @@ corresponds approximately with Perl 5.8, including support for UTF-8
 encoded strings and Unicode general category properties.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  libbz2_1-1.0.3-2
+  cygwin-1.5.25-11
+  libbz2_1-1.0.5-1
   libreadline6-5.2.7-9
   zlib-1.2.3-2
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.25-7
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  cygport-0.3.9-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
   sed-4.1.5-2
 
@@ -173,6 +172,10 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 7.6-2 -----
+Fixed unnecessary dependency_libs in libpcre.
+Included Gentoo patch for ABI compatibility for libpcrecpp.
 
 ----- version 7.6-1 -----
 Version bump.
