@@ -172,6 +172,9 @@ Files included in the binary packages:
 
 Port Notes:
 
+----- version 7.7-2 -----
+Gentoo patch for CVE-2008-2371.
+
 ----- version 7.7-1 -----
 Version bump.
 

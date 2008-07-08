@@ -1,0 +1,33 @@
+DESCRIPTION="Perl Compatible Regular Expressions library"
+HOMEPAGE="http://www.pcre.org/"
+SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2 \
+		 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2.sig"
+PATCH_URI="mirror://portage/dev-libs/lib${PN}/files/lib${P}-buffer-overflow.patch"
+
+PKG_NAMES="${PN} lib${PN}0 ${PN}-devel ${PN}-doc"
+PKG_HINTS="setup lib devel doc"
+PKG_CONTENTS[0]="--exclude=html --exclude=${PN}-config*
+				 usr/bin/*.exe usr/share/doc/ usr/share/man/man1/"
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]="usr/bin/pcre-config usr/include/ usr/lib/
+				 usr/share/doc/${P}/pcre-config.txt usr/share/man/man1/pcre-config.*"
+PKG_CONTENTS[3]="usr/share/doc/${P}/html usr/share/man/man3/"
+
+src_compile() {
+	cd ${S}
+	NO_AUTOHEADER=1
+	cygautoreconf
+
+	cd ${B}
+	cygconf \
+		--enable-newline-is-lf \
+		--enable-pcregrep-libbz2 \
+		--enable-pcregrep-libz \
+		--enable-pcretest-libreadline \
+		--enable-unicode-properties --enable-utf8 \
+		--with-link-size=2 \
+		--with-match-limit=10000000 --with-match-limit-recursion=10000000
+	cygmake
+}
+
+HTMLDOCS="doc/html/*.html"
