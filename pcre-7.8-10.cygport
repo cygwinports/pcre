@@ -1,0 +1,30 @@
+DESCRIPTION="Perl Compatible Regular Expressions library"
+HOMEPAGE="http://www.pcre.org/"
+SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2 \
+		 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2.sig"
+PATCH_URI="7.7-extra-libs.patch"
+
+PKG_NAMES="${PN} libpcre0 libpcrecpp0 libpcre-devel libpcrecpp-devel"
+pcre_CONTENTS="--exclude=html --exclude=${PN}-config*
+               usr/bin/*.exe usr/share/doc/ usr/share/man/man1/"
+libpcre0_CONTENTS="usr/bin/cygpcre-0.dll usr/bin/cygpcreposix-0.dll"
+libpcre_devel_CONTENTS="--exclude=*pcrecpp* usr/bin/pcre-config usr/include/
+                        usr/lib/ usr/share/doc/${PN}/pcre-config.txt
+                        usr/share/doc/${PN}/html/
+                        usr/share/man/man1/pcre-config.* usr/share/man/man3/"
+libpcrecpp0_CONTENTS="usr/bin/cygpcrecpp-0.dll"
+libpcrecpp_devel_CONTENTS="usr/include/pcrecpp*.h usr/lib/libpcrecpp.*
+                           usr/lib/pkgconfig/libpcrecpp.pc
+                           usr/share/doc/${PN}/html/pcrecpp.html
+                           usr/share/man/man3/pcrecpp.*"
+
+NO_AUTOHEADER=1
+CYGCONF_ARGS="
+		--enable-newline-is-lf \
+		--enable-unicode-properties --enable-utf8 \
+		--with-link-size=2 \
+		--with-match-limit=10000000 --with-match-limit-recursion=10000000
+		--enable-pcregrep-libbz2 \
+		--enable-pcregrep-libz \
+		--enable-pcretest-libreadline \
+"

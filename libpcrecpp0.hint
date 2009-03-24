@@ -1,6 +1,7 @@
-category: Doc
+category: Libs
+requires: cygwin libgcc1 libpcre0 libstdc++6
 external-source: pcre
-sdesc: "Perl-Compatible Regular Expressions (API documentation)"
+sdesc: "Perl-Compatible Regular Expressions library (C++ runtime)"
 ldesc: "The PCRE library is a set of functions that implement regular
 expression pattern matching using the same syntax and semantics as Perl,
 with just a few differences.  The current implementation of PCRE

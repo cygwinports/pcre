@@ -7,22 +7,24 @@ corresponds approximately with Perl 5.8, including support for UTF-8
 encoded strings and Unicode general category properties.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libbz2_1-1.0.5-1
-  libreadline6-5.2.12-10
-  zlib-1.2.3-2
+  cygwin-1.7.0-44
+  libbz2_1-1.0.5-10
+  libgcc1-4.3.2-2
+  libreadline6-5.2.13-11
+  libstdc++6-4.3.2-2
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4,0-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.2-2
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.6a-1
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -41,11 +43,12 @@ Build instructions:
   cygport ./pcre-7.8-X.cygport all
 
 This will create:
+  /usr/src/libpcre-devel-7.8-X.tar.bz2
   /usr/src/libpcre0-7.8-X.tar.bz2
+  /usr/src/libpcrecpp-devel-7.8-X.tar.bz2
+  /usr/src/libpcrecpp0-7.8-X.tar.bz2
   /usr/src/pcre-7.8-X-src.tar.bz2
   /usr/src/pcre-7.8-X.tar.bz2
-  /usr/src/pcre-devel-7.8-X.tar.bz2
-  /usr/src/pcre-doc-7.8-X.tar.bz2
 
 -------------------------------------------
 
@@ -54,85 +57,78 @@ Files included in the binary packages:
 (pcre)
   /usr/bin/pcregrep.exe
   /usr/bin/pcretest.exe
-  /usr/share/doc/pcre-7.8/AUTHORS
-  /usr/share/doc/pcre-7.8/ChangeLog
-  /usr/share/doc/pcre-7.8/COPYING
-  /usr/share/doc/pcre-7.8/INSTALL
-  /usr/share/doc/pcre-7.8/LICENCE
-  /usr/share/doc/pcre-7.8/NEWS
-  /usr/share/doc/pcre-7.8/README
-  /usr/share/doc/pcre-7.8/pcre-config.txt
-  /usr/share/doc/pcre-7.8/pcre.txt
-  /usr/share/doc/pcre-7.8/pcregrep.txt
-  /usr/share/doc/pcre-7.8/pcretest.txt
+  /usr/share/doc/pcre/AUTHORS
+  /usr/share/doc/pcre/ChangeLog
+  /usr/share/doc/pcre/COPYING
+  /usr/share/doc/pcre/INSTALL
+  /usr/share/doc/pcre/NEWS
+  /usr/share/doc/pcre/README
+  /usr/share/doc/pcre/pcre.txt
+  /usr/share/doc/pcre/pcregrep.txt
+  /usr/share/doc/pcre/pcretest.txt
   /usr/share/man/man1/pcregrep.1.gz
   /usr/share/man/man1/pcretest.1.gz
 
 (libpcre0)
   /usr/bin/cygpcre-0.dll
-  /usr/bin/cygpcrecpp-0.dll
   /usr/bin/cygpcreposix-0.dll
 
-(pcre-devel)
+(libpcrecpp0)
+  /usr/bin/cygpcrecpp-0.dll
+
+(libpcre-devel)
   /usr/bin/pcre-config
   /usr/include/pcre.h
   /usr/include/pcre_scanner.h
   /usr/include/pcre_stringpiece.h
-  /usr/include/pcrecpp.h
-  /usr/include/pcrecpparg.h
   /usr/include/pcreposix.h
   /usr/lib/libpcre.a
   /usr/lib/libpcre.dll.a
   /usr/lib/libpcre.la
-  /usr/lib/libpcrecpp.a
-  /usr/lib/libpcrecpp.dll.a
-  /usr/lib/libpcrecpp.la
   /usr/lib/libpcreposix.a
   /usr/lib/libpcreposix.dll.a
   /usr/lib/libpcreposix.la
   /usr/lib/pkgconfig/libpcre.pc
-  /usr/lib/pkgconfig/libpcrecpp.pc
+  /usr/share/doc/pcre/html/index.html
+  /usr/share/doc/pcre/html/pcre-config.html
+  /usr/share/doc/pcre/html/pcre.html
+  /usr/share/doc/pcre/html/pcre_compile.html
+  /usr/share/doc/pcre/html/pcre_compile2.html
+  /usr/share/doc/pcre/html/pcre_config.html
+  /usr/share/doc/pcre/html/pcre_copy_named_substring.html
+  /usr/share/doc/pcre/html/pcre_copy_substring.html
+  /usr/share/doc/pcre/html/pcre_dfa_exec.html
+  /usr/share/doc/pcre/html/pcre_exec.html
+  /usr/share/doc/pcre/html/pcre_free_substring.html
+  /usr/share/doc/pcre/html/pcre_free_substring_list.html
+  /usr/share/doc/pcre/html/pcre_fullinfo.html
+  /usr/share/doc/pcre/html/pcre_get_named_substring.html
+  /usr/share/doc/pcre/html/pcre_get_stringnumber.html
+  /usr/share/doc/pcre/html/pcre_get_stringtable_entries.html
+  /usr/share/doc/pcre/html/pcre_get_substring.html
+  /usr/share/doc/pcre/html/pcre_get_substring_list.html
+  /usr/share/doc/pcre/html/pcre_info.html
+  /usr/share/doc/pcre/html/pcre_maketables.html
+  /usr/share/doc/pcre/html/pcre_refcount.html
+  /usr/share/doc/pcre/html/pcre_study.html
+  /usr/share/doc/pcre/html/pcre_version.html
+  /usr/share/doc/pcre/html/pcreapi.html
+  /usr/share/doc/pcre/html/pcrebuild.html
+  /usr/share/doc/pcre/html/pcrecallout.html
+  /usr/share/doc/pcre/html/pcrecompat.html
+  /usr/share/doc/pcre/html/pcregrep.html
+  /usr/share/doc/pcre/html/pcrematching.html
+  /usr/share/doc/pcre/html/pcrepartial.html
+  /usr/share/doc/pcre/html/pcrepattern.html
+  /usr/share/doc/pcre/html/pcreperform.html
+  /usr/share/doc/pcre/html/pcreposix.html
+  /usr/share/doc/pcre/html/pcreprecompile.html
+  /usr/share/doc/pcre/html/pcresample.html
+  /usr/share/doc/pcre/html/pcrestack.html
+  /usr/share/doc/pcre/html/pcresyntax.html
+  /usr/share/doc/pcre/html/pcretest.html
+  /usr/share/doc/pcre/pcre-config.txt
   /usr/share/man/man1/pcre-config.1.gz
-
-(pcre-doc)
-  /usr/share/doc/pcre-7.8/html/index.html
-  /usr/share/doc/pcre-7.8/html/pcre-config.html
-  /usr/share/doc/pcre-7.8/html/pcre.html
-  /usr/share/doc/pcre-7.8/html/pcre_compile.html
-  /usr/share/doc/pcre-7.8/html/pcre_compile2.html
-  /usr/share/doc/pcre-7.8/html/pcre_config.html
-  /usr/share/doc/pcre-7.8/html/pcre_copy_named_substring.html
-  /usr/share/doc/pcre-7.8/html/pcre_copy_substring.html
-  /usr/share/doc/pcre-7.8/html/pcre_dfa_exec.html
-  /usr/share/doc/pcre-7.8/html/pcre_exec.html
-  /usr/share/doc/pcre-7.8/html/pcre_free_substring.html
-  /usr/share/doc/pcre-7.8/html/pcre_free_substring_list.html
-  /usr/share/doc/pcre-7.8/html/pcre_fullinfo.html
-  /usr/share/doc/pcre-7.8/html/pcre_get_named_substring.html
-  /usr/share/doc/pcre-7.8/html/pcre_get_stringnumber.html
-  /usr/share/doc/pcre-7.8/html/pcre_get_stringtable_entries.html
-  /usr/share/doc/pcre-7.8/html/pcre_get_substring.html
-  /usr/share/doc/pcre-7.8/html/pcre_get_substring_list.html
-  /usr/share/doc/pcre-7.8/html/pcre_info.html
-  /usr/share/doc/pcre-7.8/html/pcre_maketables.html
-  /usr/share/doc/pcre-7.8/html/pcre_refcount.html
-  /usr/share/doc/pcre-7.8/html/pcre_study.html
-  /usr/share/doc/pcre-7.8/html/pcre_version.html
-  /usr/share/doc/pcre-7.8/html/pcreapi.html
-  /usr/share/doc/pcre-7.8/html/pcrebuild.html
-  /usr/share/doc/pcre-7.8/html/pcrecallout.html
-  /usr/share/doc/pcre-7.8/html/pcrecompat.html
-  /usr/share/doc/pcre-7.8/html/pcrecpp.html
-  /usr/share/doc/pcre-7.8/html/pcregrep.html
-  /usr/share/doc/pcre-7.8/html/pcrematching.html
-  /usr/share/doc/pcre-7.8/html/pcrepartial.html
-  /usr/share/doc/pcre-7.8/html/pcrepattern.html
-  /usr/share/doc/pcre-7.8/html/pcreperform.html
-  /usr/share/doc/pcre-7.8/html/pcreposix.html
-  /usr/share/doc/pcre-7.8/html/pcreprecompile.html
-  /usr/share/doc/pcre-7.8/html/pcresample.html
-  /usr/share/doc/pcre-7.8/html/pcrestack.html
-  /usr/share/doc/pcre-7.8/html/pcretest.html
   /usr/share/man/man3/pcre.3.gz
   /usr/share/man/man3/pcre_compile.3.gz
   /usr/share/man/man3/pcre_compile2.3.gz
@@ -158,7 +154,6 @@ Files included in the binary packages:
   /usr/share/man/man3/pcrebuild.3.gz
   /usr/share/man/man3/pcrecallout.3.gz
   /usr/share/man/man3/pcrecompat.3.gz
-  /usr/share/man/man3/pcrecpp.3.gz
   /usr/share/man/man3/pcrematching.3.gz
   /usr/share/man/man3/pcrepartial.3.gz
   /usr/share/man/man3/pcrepattern.3.gz
@@ -168,54 +163,22 @@ Files included in the binary packages:
   /usr/share/man/man3/pcresample.3.gz
   /usr/share/man/man3/pcrestack.3.gz
 
+(libpcrecpp-devel)
+  /usr/include/pcrecpp.h
+  /usr/include/pcrecpparg.h
+  /usr/lib/libpcrecpp.a
+  /usr/lib/libpcrecpp.dll.a
+  /usr/lib/libpcrecpp.la
+  /usr/lib/pkgconfig/libpcrecpp.pc
+  /usr/share/doc/pcre/html/pcrecpp.html
+  /usr/share/man/man3/pcrecpp.3.gz
+
 ------------------
 
 Port Notes:
 
------ version 7.8-1 -----
-Version bump.
-
------ version 7.7-2 -----
-Gentoo patch for CVE-2008-2371.
-
------ version 7.7-1 -----
-Version bump.
-
------ version 7.6-2 -----
-Fixed unnecessary dependency_libs in libpcre.
-Included Gentoo patch for ABI compatibility for libpcrecpp.
-
------ version 7.6-1 -----
-Version bump.
-
------ version 7.5-1 -----
-Version bump.
-
------ version 7.4-2 -----
-Enabled unicode properties for glib-2.14.
-
------ version 7.4-1 -----
-Version bump.
-
------ version 7.3-1 -----
-Version bump.
-
------ version 7.2-1 -----
-Version bump.
-
------ version 7.1-1 -----
-Version bump.
-
------ version 6.7-1 -----
-Version bump.
-
------ version 6.6-1 -----
-Version bump.
-pcregrep(1) and pcretest(1) manpages moved to main package.
-
------ version 6.3-1 -----
-New upstream release with a new Cygwin maintainer.
-This version fixes security issues present in the last Cygwin pcre release.
+----- version 7.8-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

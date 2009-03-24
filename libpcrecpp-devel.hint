@@ -1,0 +1,9 @@
+category: Libs
+requires: cygwin libpcrecpp0 libpcre-devel libstdc++6-devel
+external-source: pcre
+sdesc: "Perl-Compatible Regular Expressions library (C++ development)"
+ldesc: "The PCRE library is a set of functions that implement regular
+expression pattern matching using the same syntax and semantics as Perl,
+with just a few differences.  The current implementation of PCRE
+(release 6.x) corresponds approximately with Perl 5.8, including support
+for UTF-8 encoded strings and Unicode general category properties."
