@@ -2,7 +2,6 @@ DESCRIPTION="Perl Compatible Regular Expressions library"
 HOMEPAGE="http://www.pcre.org/"
 SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2 \
 		 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2.sig"
-PATCH_URI="7.7-extra-libs.patch"
 
 PKG_NAMES="${PN} libpcre0 libpcrecpp0 libpcre-devel libpcrecpp-devel"
 pcre_CONTENTS="--exclude=html --exclude=${PN}-config*

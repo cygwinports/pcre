@@ -7,7 +7,7 @@ corresponds approximately with Perl 5.8, including support for UTF-8
 encoded strings and Unicode general category properties.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-45
   libbz2_1-1.0.5-10
   libgcc1-4.3.2-2
   libreadline6-5.2.13-11
@@ -23,7 +23,7 @@ Build requirements:
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gcc4-g++-4.3.2-2
-  libtool-2.2.6a-1
+  libtool-2.2.7a-12
   make-3.81-2
   sed-4.1.5-2
 
@@ -36,19 +36,19 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pcre-7.8-X-src.tar.bz2
+  unpack pcre-7.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pcre-7.8-X.cygport all
+  cygport ./pcre-7.9-X.cygport all
 
 This will create:
-  /usr/src/libpcre-devel-7.8-X.tar.bz2
-  /usr/src/libpcre0-7.8-X.tar.bz2
-  /usr/src/libpcrecpp-devel-7.8-X.tar.bz2
-  /usr/src/libpcrecpp0-7.8-X.tar.bz2
-  /usr/src/pcre-7.8-X-src.tar.bz2
-  /usr/src/pcre-7.8-X.tar.bz2
+  /usr/src/libpcre-devel-7.9-X.tar.bz2
+  /usr/src/libpcre0-7.9-X.tar.bz2
+  /usr/src/libpcrecpp-devel-7.9-X.tar.bz2
+  /usr/src/libpcrecpp0-7.9-X.tar.bz2
+  /usr/src/pcre-7.9-X-src.tar.bz2
+  /usr/src/pcre-7.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -176,6 +176,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 7.9-1 -----
+Version bump.
 
 ----- version 7.8-10 -----
 Initial release for Cygwin 1.7.
