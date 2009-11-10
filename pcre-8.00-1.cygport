@@ -21,9 +21,8 @@ NO_AUTOHEADER=1
 CYGCONF_ARGS="
 		--enable-newline-is-lf \
 		--enable-unicode-properties --enable-utf8 \
-		--with-link-size=2 \
-		--with-match-limit=10000000 --with-match-limit-recursion=10000000
 		--enable-pcregrep-libbz2 \
 		--enable-pcregrep-libz \
 		--enable-pcretest-libreadline \
+		--disable-stack-for-recursion
 "
