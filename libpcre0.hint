@@ -1,5 +1,5 @@
 category: Libs
-requires: libgcc1
+requires:
 external-source: pcre
 sdesc: "Perl-Compatible Regular Expressions library (C runtime)"
 ldesc: "The PCRE library is a set of functions that implement regular
