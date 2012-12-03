@@ -1,5 +1,5 @@
 NAME="pcre"
-VERSION=8.31
+VERSION=8.32
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
@@ -10,7 +10,7 @@ HOMEPAGE="http://www.pcre.org/"
 SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2 \
 	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2.sig"
 
-PKG_NAMES="${PN} libpcre1 libpcre16_0 libpcrecpp0 libpcreposix0 libpcre-devel"
+PKG_NAMES="${PN} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel"
 pcre_CATEGORY="Text"
 pcre_SUMMARY="${SUMMARY} utilities"
 pcre_CONTENTS="--exclude=html --exclude=${PN}-config*
@@ -19,6 +19,8 @@ libpcre1_SUMMARY="${SUMMARY} UTF-8 runtime"
 libpcre1_CONTENTS="usr/bin/cygpcre-1.dll"
 libpcre16_0_SUMMARY="${SUMMARY} UTF-16 runtime"
 libpcre16_0_CONTENTS="usr/bin/cygpcre16-0.dll"
+libpcre32_0_SUMMARY="${SUMMARY} UTF-32 runtime"
+libpcre32_0_CONTENTS="usr/bin/cygpcre32-0.dll"
 libpcrecpp0_SUMMARY="${SUMMARY} C++ bindings"
 libpcrecpp0_CONTENTS="usr/bin/cygpcrecpp-0.dll"
 libpcreposix0_SUMMARY="POSIX regex API using PCRE"
@@ -32,7 +34,8 @@ libpcre_devel_CONTENTS="usr/bin/pcre-config usr/include/
 NO_AUTOHEADER=1
 CYGCONF_ARGS="
 		--enable-pcre16 \
-		--enable-newline-is-lf \
+		--enable-pcre32 \
+		--enable-newline-is-anycrlf \
 		--enable-unicode-properties --enable-utf8 \
 		--enable-pcregrep-libbz2 \
 		--enable-pcregrep-libz \
