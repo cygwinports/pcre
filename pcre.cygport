@@ -1,5 +1,5 @@
 NAME="pcre"
-VERSION=8.32
+VERSION=8.33
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
@@ -7,13 +7,13 @@ DESCRIPTION="The PCRE library is a set of functions that implement regular
 expression pattern matching using the same syntax and semantics as Perl,
 with just a few differences."
 HOMEPAGE="http://www.pcre.org/"
-SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2 \
-	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${P}.tar.bz2.sig"
+SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2 \
+	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
 
 PKG_NAMES="${PN} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel"
 pcre_CATEGORY="Text"
 pcre_SUMMARY="${SUMMARY} utilities"
-pcre_CONTENTS="--exclude=html --exclude=${PN}-config*
+pcre_CONTENTS="--exclude=html --exclude=pcre-config*
                usr/bin/*.exe usr/share/doc/ usr/share/man/man1/"
 libpcre1_SUMMARY="${SUMMARY} UTF-8 runtime"
 libpcre1_CONTENTS="usr/bin/cygpcre-1.dll"
@@ -27,8 +27,8 @@ libpcreposix0_SUMMARY="POSIX regex API using PCRE"
 libpcreposix0_CONTENTS="usr/bin/cygpcreposix-0.dll"
 libpcre_devel_SUMMARY="${SUMMARY} library development"
 libpcre_devel_CONTENTS="usr/bin/pcre-config usr/include/
-                        usr/lib/ usr/share/doc/${PN}/pcre-config.txt
-                        usr/share/doc/${PN}/html/
+                        usr/lib/ usr/share/doc/${NAME}/pcre-config.txt
+                        usr/share/doc/${NAME}/html/
                         usr/share/man/man1/pcre-config.* usr/share/man/man3/"
 
 NO_AUTOHEADER=1
