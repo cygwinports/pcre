@@ -1,5 +1,5 @@
 NAME="pcre"
-VERSION=8.33
+VERSION=8.34
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
@@ -10,7 +10,7 @@ HOMEPAGE="http://www.pcre.org/"
 SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2 \
 	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
 
-PKG_NAMES="${PN} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel"
+PKG_NAMES="${NAME} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel"
 pcre_CATEGORY="Text"
 pcre_SUMMARY="${SUMMARY} utilities"
 pcre_CONTENTS="--exclude=html --exclude=pcre-config*
