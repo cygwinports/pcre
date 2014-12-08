@@ -10,15 +10,16 @@ HOMEPAGE="http://www.pcre.org/"
 SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2 \
 	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.21-multilib.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.35-Fix-bad-starting-data-when-char-with-more-than-one-o.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.35-Fix-not-including-VT-in-starting-characters-for-s.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.35-Fix-bad-compile-of-Qx-.-where-x-is-any-character.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.35-Fix-empty-matching-possessive-zero-repeat-groups-bug.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.35-Fixed-several-memory-leaks-in-pcregrep.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.35-Fix-compiler-crash-misbehaviour-for-zero-repeated-gr.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.35-Fix-compile-time-loop-for-recursive-reference-within.patch
+	fedora/pcre-8.21-multilib.patch
+	fedora/pcre-8.35-Fix-bad-starting-data-when-char-with-more-than-one-o.patch
+	fedora/pcre-8.35-Fix-not-including-VT-in-starting-characters-for-s.patch
+	fedora/pcre-8.35-Fix-bad-compile-of-Qx-.-where-x-is-any-character.patch
+	fedora/pcre-8.35-Fix-empty-matching-possessive-zero-repeat-groups-bug.patch
+	fedora/pcre-8.35-Fixed-several-memory-leaks-in-pcregrep.patch
+	fedora/pcre-8.35-Fix-compiler-crash-misbehaviour-for-zero-repeated-gr.patch
+	fedora/pcre-8.35-Fix-compile-time-loop-for-recursive-reference-within.patch
 "
+
 PKG_NAMES="${NAME} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel"
 pcre_CATEGORY="Text"
 pcre_SUMMARY="${SUMMARY} utilities"
