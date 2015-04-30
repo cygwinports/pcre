@@ -1,5 +1,5 @@
 NAME="pcre"
-VERSION=8.36
+VERSION=8.37
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
@@ -11,8 +11,7 @@ SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.t
 	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
 PATCH_URI="
 	fedora/pcre-8.21-multilib.patch
-	fedora/pcre-8.36-Fix-bug-when-there-are-unset-groups-prior-to-ACCEPT-.patch
-	fedora/pcre-8.36-Fix-zero-repeat-assertion-condition-bug.patch
+	8.37-cygwin-jit.patch
 "
 
 PKG_NAMES="${NAME} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel"
@@ -38,6 +37,7 @@ libpcre_devel_CONTENTS="usr/bin/pcre-config usr/include/
 
 NO_AUTOHEADER=1
 CYGCONF_ARGS="
+		--enable-jit \
 		--enable-pcre16 \
 		--enable-pcre32 \
 		--enable-newline-is-anycrlf \
