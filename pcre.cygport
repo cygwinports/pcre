@@ -1,6 +1,6 @@
 NAME="pcre"
 VERSION=8.37
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
 DESCRIPTION="The PCRE library is a set of functions that implement regular
@@ -11,6 +11,11 @@ SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.t
 	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
 PATCH_URI="
 	fedora/pcre-8.21-multilib.patch
+	fedora/pcre-8.37-Fix-buffer-overflow-for-named-recursive-back-referen.patch
+	fedora/pcre-8.37-Fix-buffer-overflow-for-forward-reference-within-bac.patch
+	fedora/pcre-8.37-Fix-named-forward-reference-to-duplicate-group-numbe.patch
+	fedora/pcre-8.37-Fix-another-buffer-overflow.patch
+	fedora/pcre-8.37-Fix-buffer-overflow-for-named-references-in-situatio.patch
 	8.37-cygwin-jit.patch
 "
 
