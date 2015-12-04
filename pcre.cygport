@@ -1,6 +1,6 @@
 NAME="pcre"
 VERSION=8.37
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
 DESCRIPTION="The PCRE library is a set of functions that implement regular
@@ -16,6 +16,13 @@ PATCH_URI="
 	fedora/pcre-8.37-Fix-named-forward-reference-to-duplicate-group-numbe.patch
 	fedora/pcre-8.37-Fix-another-buffer-overflow.patch
 	fedora/pcre-8.37-Fix-buffer-overflow-for-named-references-in-situatio.patch
+	fedora/pcre-8.37-Hack-in-yet-other-patch-for-a-bug-in-size-computatio.patch
+	fedora/pcre-8.37-Fix-compile-bug-for-classes-like-W-p-Any.patch
+	fedora/pcre-8.38-RC1-Fix-crash-caused-by-long-MARK-or-THEN-names.patch
+	fedora/pcre-8.37-Fix-POSIX-class-single-character-bug.patch
+	fedora/pcre-8.37-Fix-punct-bug-in-UCP-mode-interpreter-only.patch
+	fedora/pcre-8.38-RC1-Hotfix-for-punct-in-JIT.patch
+	fedora/pcre-8.37-Fix-overflow-when-ovector-has-size-1.patch
 	8.37-cygwin-jit.patch
 "
 
