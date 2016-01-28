@@ -1,6 +1,6 @@
 NAME="pcre"
-VERSION=8.37
-RELEASE=3
+VERSION=8.38
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
 DESCRIPTION="The PCRE library is a set of functions that implement regular
@@ -11,22 +11,20 @@ SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.t
 	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
 PATCH_URI="
 	fedora/pcre-8.21-multilib.patch
-	fedora/pcre-8.37-Fix-buffer-overflow-for-named-recursive-back-referen.patch
-	fedora/pcre-8.37-Fix-buffer-overflow-for-forward-reference-within-bac.patch
-	fedora/pcre-8.37-Fix-named-forward-reference-to-duplicate-group-numbe.patch
-	fedora/pcre-8.37-Fix-another-buffer-overflow.patch
-	fedora/pcre-8.37-Fix-buffer-overflow-for-named-references-in-situatio.patch
-	fedora/pcre-8.37-Hack-in-yet-other-patch-for-a-bug-in-size-computatio.patch
-	fedora/pcre-8.37-Fix-compile-bug-for-classes-like-W-p-Any.patch
-	fedora/pcre-8.38-RC1-Fix-crash-caused-by-long-MARK-or-THEN-names.patch
-	fedora/pcre-8.37-Fix-POSIX-class-single-character-bug.patch
-	fedora/pcre-8.37-Fix-punct-bug-in-UCP-mode-interpreter-only.patch
-	fedora/pcre-8.38-RC1-Hotfix-for-punct-in-JIT.patch
-	fedora/pcre-8.37-Fix-overflow-when-ovector-has-size-1.patch
-	8.37-cygwin-jit.patch
+	fedora/pcre-8.38-Fix-auto-callout-comment-bug.patch
+	fedora/pcre-8.38-Fix-negated-POSIX-class-within-negated-overall-class.patch
+	fedora/pcre-8.38-Fix-bug-for-isolated-E-between-an-item-and-its-quali.patch
+	fedora/pcre-8.38-Give-error-for-regexec-with-pmatch-NULL-and-REG_STAR.patch
+	fedora/pcre-8.38-Allow-for-up-to-32-bit-numbers-in-the-ordin-function.patch
+	fedora/pcre-8.38-Fix-Q-E-before-qualifier-bug-when-auto-callouts-are-.patch
+	fedora/pcre-8.38-Fix-x-bug-when-pattern-starts-with-white-space-and-x.patch
+	fedora/pcre-8.38-Fix-copy-named-substring-bug.patch
+	fedora/pcre-8.38-Fix-by-hacking-another-length-computation-issue.patch
+	fedora/pcre-8.38-Fix-get_substring_list-bug-when-K-is-used-in-an-asse.patch
+	8.38-cygwin-jit.patch
 "
 
-PKG_NAMES="${NAME} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel"
+PKG_NAMES="${NAME} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel libpcre-doc"
 pcre_CATEGORY="Text"
 pcre_SUMMARY="${SUMMARY} utilities"
 pcre_CONTENTS="--exclude=html --exclude=pcre-config*
@@ -44,8 +42,10 @@ libpcreposix0_CONTENTS="usr/bin/cygpcreposix-0.dll"
 libpcre_devel_SUMMARY="${SUMMARY} library development"
 libpcre_devel_CONTENTS="usr/bin/pcre-config usr/include/
                         usr/lib/ usr/share/doc/${NAME}/pcre-config.txt
-                        usr/share/doc/${NAME}/html/
-                        usr/share/man/man1/pcre-config.* usr/share/man/man3/"
+                        usr/share/man/man1/pcre-config.*"
+libpcre_doc_CATEGORY="Doc"
+libpcre_doc_SUMMARY="${SUMMARY} API documentation"
+libpcre_doc_CONTENTS="usr/share/doc/${NAME}/html/ usr/share/man/man3/"
 
 NO_AUTOHEADER=1
 CYGCONF_ARGS="
