@@ -1,5 +1,5 @@
 NAME="pcre"
-VERSION=8.39
+VERSION=8.40
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
@@ -11,7 +11,6 @@ SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.t
 	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
 PATCH_URI="
 	fedora/pcre-8.21-multilib.patch
-	fedora/pcre-8.39-Fix-bad-interaction-between-o-and-M-in-pcregrep.patch
 	8.39-cygwin-jit.patch
 "
 
