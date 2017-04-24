@@ -1,6 +1,6 @@
 NAME="pcre"
 VERSION=8.40
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
 DESCRIPTION="The PCRE library is a set of functions that implement regular
@@ -19,6 +19,9 @@ PATCH_URI="
 	fedora/pcre-8.40-Make-pcretest-check-size-of-O-argument.patch
 	fedora/pcre-8.40-Minor-doc-update.patch
 	fedora/pcre-8.40-Fix-Unicode-property-crash-for-32-bit-characters-gre.patch
+	fedora/pcre-8.40-Fix-DFA-match-handling-of-possessive-repeated-charac.patch
+	fedora/pcre-8.40-Fix-typo-leading-to-possible-buffer-overflow-in-pcre.patch
+	fedora/pcre-8.40-Fix-character-type-detection-when-32-bit-and-UCP-are.patch
 	8.39-cygwin-jit.patch
 "
 
