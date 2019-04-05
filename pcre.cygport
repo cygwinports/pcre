@@ -1,28 +1,19 @@
 NAME="pcre"
-VERSION=8.40
-RELEASE=3
+VERSION=8.43
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Perl Compatible Regular Expressions"
 DESCRIPTION="The PCRE library is a set of functions that implement regular
 expression pattern matching using the same syntax and semantics as Perl,
 with just a few differences."
-HOMEPAGE="http://www.pcre.org/"
-SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2 \
-	 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.tar.bz2.sig"
+HOMEPAGE="https://www.pcre.org/"
+SRC_URI="https://ftp.pcre.org/pub/pcre/pcre-${VERSION}.tar.bz2 \
+	 https://ftp.pcre.org/pub/pcre//pcre-${VERSION}.tar.bz2.sig"
 PATCH_URI="
 	fedora/pcre-8.21-multilib.patch
-	fedora/pcre-8.40-Correct-fix-for-pcre2grep-multiline-with-only-matchi.patch
-	fedora/pcre-8.40-Fix-a-missing-else-in-the-JIT-compiler-reported-by-i.patch
-	fedora/pcre-8.40-Silent-a-GCC-7-warning-about-too-small-buffer-for-pr.patch
-	fedora/pcre-8.40-Fix-recognition-of-style-comment-between-quantifier-.patch
-	fedora/pcre-8.40-Check-character-256-for-isprint-in-pcretest.patch
-	fedora/pcre-8.40-Make-pcretest-check-size-of-O-argument.patch
-	fedora/pcre-8.40-Minor-doc-update.patch
-	fedora/pcre-8.40-Fix-Unicode-property-crash-for-32-bit-characters-gre.patch
-	fedora/pcre-8.40-Fix-DFA-match-handling-of-possessive-repeated-charac.patch
-	fedora/pcre-8.40-Fix-typo-leading-to-possible-buffer-overflow-in-pcre.patch
-	fedora/pcre-8.40-Fix-character-type-detection-when-32-bit-and-UCP-are.patch
-	8.39-cygwin-jit.patch
+	fedora/pcre-8.41-fix_stack_estimator.patch
+	fedora/pcre-8.42-Declare-POSIX-regex-function-names-as-macros-to-PCRE.patch
+	8.43-cygwin-jit.patch
 "
 
 PKG_NAMES="${NAME} libpcre1 libpcre16_0 libpcre32_0 libpcrecpp0 libpcreposix0 libpcre-devel libpcre-doc"
